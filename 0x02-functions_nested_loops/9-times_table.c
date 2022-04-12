@@ -14,14 +14,14 @@ void times_table(void)
 			prod = num * mult;
 			if (mult == 9)
 			{
-				_putchar(k + '0');
+				_putchar(prod + '0');
 			}
-			else if (k <=9 )
+			else if (prod <= 9 )
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar('
-			_putchar((prod % 10) + '0');
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
 			}
 		}
 		_putchar('\n');
