@@ -1,17 +1,27 @@
 #include "main.h"
 /**
- * _5-sign.c - checks for alphabetic character
- * @c: takes in a character
- * Return: 1 if letter, owercase, uppercase;0 for otherwise
+ * print_sign - prints the sign of a number
+ * @n: The number of which the sign will n be printed.
+ *
+ * Return: 1 ifthe number is greater than zero,
+ *         0 if the number is zero,
+ *         -1 if the number is less than zero
  */
-int _sign(int c)
+int print_sign(int n)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if (n > 0)
 	{
+		_putchar('+');
 		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
 	}
 	else
 	{
-		return (0);
+		_putchar('-');
+		return (-1);
 	}
 }
