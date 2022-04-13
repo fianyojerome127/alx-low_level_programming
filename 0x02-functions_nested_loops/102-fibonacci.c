@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * main - Prints first 50 fibonacci numbers, starting with 1 and 
  *        separated by a coma followed by a space.
