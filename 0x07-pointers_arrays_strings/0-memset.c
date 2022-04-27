@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _memset - ironnou
  * @s: pointer to char params
