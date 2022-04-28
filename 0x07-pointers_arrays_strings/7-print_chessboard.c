@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints the chessboard.
- * @a: matrix
+ * print_chessboard - prints the chessboard, 2d array
+ * @a: 2d array of chars
+ * Return: void
  */
 
 void print_chessboard(char (*a)[8])
@@ -15,10 +16,10 @@ void print_chessboard(char (*a)[8])
 		j = 0;
 		while (j < 8)
 		{
-			_putchar(a[i][j]);
+			_putchar (a[i][j]);
 			j++;
 		}
-		_putchar('\n');
+		_putchar ('\n');
 		i++;
 	}
 }
