@@ -7,6 +7,7 @@
  * @size: number matrix
  * Return: void
  */
+
 void print_diagsums(int *a, int size)
 {
 	int i;
@@ -16,6 +17,7 @@ void print_diagsums(int *a, int size)
 	sum2 = 0;
 
 	i = 0;
+
 	while (i < size)
 	{
 		sum1 = sum1 + *(a + i * size + i);
