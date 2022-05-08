@@ -1,11 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - entry point
- * 
- * Return: nothing, return void
- **/
+ * Return: nothing
+ */
 
 int main(void)
 {
