@@ -1,28 +1,27 @@
-#ifndef PROTOTYPES
-#define PROTOTYPES
+#ifndef CALCFUNC
+#define CALCFUNC
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
- * struct op - Struct op
+ * struct op - Short description
+ * @op: the operator to ve examined
+ * @f: pointer to function.
  *
- * @op: The operator
- * @f: The function associated
+ * Description: Longer description
  */
-
 typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
 } op_t;
 
-/* functions to choose from for 5 different operations */
+int (*get_op_func(char *s))(int, int);
 int op_add(int a, int b);
 int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 
-/* function to select correct operation function to perform */
-int (*get_op_func(char *s))(int, int);
-
 #endif
-
