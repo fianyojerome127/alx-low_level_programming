@@ -1,4 +1,6 @@
 #include "main.h"
+#include <limits.h>
+
 /**
  * malloc_checked - allocate memory an checks.
 (* a blank line
