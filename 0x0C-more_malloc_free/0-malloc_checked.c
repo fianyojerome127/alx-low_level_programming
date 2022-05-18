@@ -8,7 +8,7 @@
  * Description: allocates memory?
  * section header: the header of this function is main.h
  * Return: this is void, no return.
-*/
+ */
 void *malloc_checked(unsigned int b)
 {
 	void *p;
