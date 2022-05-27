@@ -1,24 +1,40 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
+
 /**
- * print_list - print the elements in a list.
- * a blank line
- * @h: the list
- * Description: print the elements of one list?
- * section header: the header of this function is lists.h
- * Return: this return the num of the elements in the list
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-size_t print_list(const list_t *h)
+int main(void)
 {
-	int i;
+    list_t *head;
+    list_t *new;
+    list_t hello = {"World", 5, NULL};
+    size_t n;
 
-	for (i = 0; h ; i++)
-	{
-		if (h->str == '\0')
-			printf("[0] (nil)\n");
-		else
-			printf("[%i] %s\n", h->len, h->str);
-		h = h->next;
-	}
+    head = &hello;
+    new = malloc(sizeof(list_t));
+    if (new == NULL)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    new->str = strdup("Hello");
+    new->len = 5;
+    new->next = head;
+    head = new;
+    n = print_list(head);
+    printf("-> %lu elements\n", n);
 
-	return (i);
+    printf("\n");
+    free(new->str);
+    new->str = NULL;
+    n = print_list(head);
+    printf("-> %lu elements\n", n);
+
+    free(new);
+    return (0);
 }
